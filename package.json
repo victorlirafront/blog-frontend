@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "22.x"
+    "node": ">=22.0.0"
   },
   "scripts": {
     "dev": "next dev",
-    "build": "cross-env CI=false next build",
+    "build": "CI=false && next build",
     "build:dev": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -40,7 +40,6 @@
     "axios": "^1.4.0",
     "babel-plugin-styled-components": "^2.1.4",
     "cypress": "^13.15.0",
-    "cross-env": "^7.0.3",
     "dotenv": "^16.4.5",
     "eslint-config-next": "^15.5.7",
     "framer-motion": "^10.17.4",
